@@ -4,12 +4,6 @@ pipeline {
 
     stages {
 
-        stage('Clone Repository') {
-            steps {
-                git 'https://github.com/Lakshmiprasad234/movie-recommendation-system.git'
-            }
-        }
-
         stage('Build Backend Docker Image') {
             steps {
                 bat 'docker build -t movie-backend ./backend'
