@@ -6,7 +6,7 @@ function Home() {
       </h1>
 
       <p className="text-xl text-gray-300 mb-8">
-        AI Powered Movie Recommendation Platform
+        Artificial Intelligence Powered Movie Recommendation Platform
       </p>
 
       <button className="bg-red-500 hover:bg-red-600 px-6 py-3 rounded-lg text-lg">

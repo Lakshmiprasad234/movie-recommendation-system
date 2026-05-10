@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: movie-backend
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: movie-backend
+
+  template:
+    metadata:
+      labels:
+        app: movie-backend
+
+    spec:
+      containers:
+      - name: movie-backend
+        image: movie-backend
+        imagePullPolicy: Never
+
+        ports:
+        - containerPort: 8000
